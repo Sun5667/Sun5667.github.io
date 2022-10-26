@@ -19,21 +19,19 @@
 <body>
     <div id="app">
         <div class="common-layout">
-            <el-container>
+            <el-container style="position:absolute;left:0;right:0;top:0;bottom:0;overflow:hidden;">
                 <el-aside width="200px">
                     <div class="mango" style="text-align: center;">
                         <img src="./pictures/mango.jpg" alt="mango" height="100" width="100"
                             style="border-radius: 100%;">
                     </div>
-                    <el-scrollbar>
                         <el-menu>
                             <el-menu-item index="1">首页</el-menu-item>
                             <el-menu-item index="2">项目</el-menu-item>
                             <el-menu-item index="3">小记</el-menu-item>
                             <el-menu-item index="4">总结</el-menu-item>
-                            <el-menu-item index="4">随笔</el-menu-item>
+                            <el-menu-item index="5">随笔</el-menu-item>
                         </el-menu>
-                    </el-scrollbar>
                 </el-aside>
                 <el-container>
                     <el-header>Header</el-header>
@@ -65,25 +63,17 @@
 
 </body>
 
-<style scoped lang="less">
-    .el-container {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-    }
-
+<style scoped>
     .el-header,
     .el-footer {
         background-color: #b3c0d1;
         color: #333;
         text-align: center;
-        line-height: 60px;
     }
 
     .el-aside {
         background-color: #839ebd;
         color: #333;
-        text-align: center;
         line-height: 200px;
     }
 
@@ -91,10 +81,11 @@
         background-color: #e9eef3;
         color: #333;
         text-align: center;
-        line-height: 160px;
     }
 
     .el-menu {
-        background-color:  #839ebd;
+        background-color: #839ebd;
+        text-align: center;
     }
+
 </style>
